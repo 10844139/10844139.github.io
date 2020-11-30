@@ -311,9 +311,9 @@ hr {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid #e5f2f8d8;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent #e5f2f8d8;
 }
 .right::before {
   content: " ";
@@ -323,16 +323,16 @@ hr {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid #e5f2f8d8;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent #e5f2f8d8 transparent transparent;
 }
 .right::after {
   left: -16px;
 }
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color:#e5f2f8d8;
   position: relative;
   border-radius: 6px;
 }
@@ -347,9 +347,9 @@ hr {
   }
   .container::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid#e5f2f8d8;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent#e5f2f8d8 transparent transparent;
   }
   .left::after, .right::after {
     left: 15px;
@@ -407,14 +407,14 @@ h3{
   border-radius: 10px;
   border: #32a4d1;
   box-shadow: 0px 10px 14px -7px #197195;
-	background:linear-gradient(to bottom, #cae9f6 5%, #76c7e8 100%);
-  background-color:#cae9f6;
+	background:linear-gradient(to bottom, #c7e4f0 5%, #41bbeb 100%);
+  background-color:#c7e4f0;
   cursor:pointer;
   font-weight: bold;
 }
 .button:hover {
-	background:linear-gradient(to bottom,#76c7e8 5%, #cae9f6 100%);
-	background-color:#76c7e8;
+	background:linear-gradient(to bottom,#3ab1e0 5%, #bee2f1 100%);
+	background-color:#3ab1e0;
 }
 /*工作經歷展開*/
 .accordion {
