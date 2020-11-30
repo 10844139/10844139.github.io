@@ -146,11 +146,11 @@ hr {
   border-radius: 50%;
   clip: rect(0px, 100px, 200px, 0px);
   background-color: #ff8b94;
-  animation: fill ease-in-out 5s;
+  animation: fill ease-in-out 9s;
   transform: rotate(170deg);
 }
 .mask.full {
-  animation: fill ease-in-out 5s;
+  animation: fill ease-in-out 9s;
   transform: rotate(170deg);
 }
 @keyframes fill {
@@ -168,11 +168,11 @@ hr {
   border-radius: 50%;
   clip: rect(0px, 100px, 200px, 0px);
   background-color: #ffc39b;
-  animation: fill1 ease-in-out 5s;
+  animation: fill1 ease-in-out 8s;
   transform: rotate(120deg);
 }
 .mask.full1 {
-  animation: fill1 ease-in-out 5s;
+  animation: fill1 ease-in-out 8s;
   transform: rotate(120deg);
 }
 @keyframes fill1 {
@@ -190,11 +190,11 @@ hr {
   border-radius: 50%;
   clip: rect(0px, 100px, 200px, 0px);
   background-color: #fce795;
-  animation: fill2 ease-in-out 5s;
+  animation: fill2 ease-in-out 8s;
   transform: rotate(150deg);
 }
 .mask.full2 {
-  animation: fill2 ease-in-out 5s;
+  animation: fill2 ease-in-out 8s;
   transform: rotate(150deg);
 }
 @keyframes fill2 {
@@ -212,11 +212,11 @@ hr {
   border-radius: 50%;
   clip: rect(0px, 100px, 200px, 0px);
   background-color: #9ee7cc;
-  animation: fill3 ease-in-out 5s;
+  animation: fill3 ease-in-out 8s;
   transform: rotate(110deg);
 }
 .mask.full3 {
-  animation: fill3 ease-in-out 5s;
+  animation: fill3 ease-in-out 8s;
   transform: rotate(110deg);
 }
 @keyframes fill3 {
