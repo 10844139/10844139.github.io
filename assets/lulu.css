@@ -1,0 +1,458 @@
+/*歸零*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*整體*/
+body {
+  background-image: url("p0043_l.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: Lucida Console, 標楷體;
+  border: 20px solid skyblue;
+}
+/*可以放大的照片*/
+.lulu {
+  border-radius: 50%;
+  max-width: 320px;
+  max-height: 320px;
+  overflow: hidden;
+  margin: 90px 90px 70px 90px;
+}
+.lulu img {
+  transition: all 0.6s;
+  width: 100%;
+}
+.lulu img:hover {
+  transform: scale(1.1);
+}
+/*姓名欄位*/
+.name {
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  margin: -50px 30px 25px 100px;
+}
+h4{
+  margin: 20px 0 15px 0;
+  font-size: 34pt;
+  font-weight: bold;
+}
+h5{
+  font-size: 24pt;
+  font-weight: bold;
+}
+/*左邊簡介*/
+.text {
+  font-size: 20pt;
+  display: flex;
+	justify-content: right;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.tt {
+  margin: 60px;
+}
+.mm {
+  display: flex;
+  margin: 10px 0;
+}
+/*右邊資訊*/
+.and{
+  display: flex;
+	justify-content: right;
+  align-items: center;
+  margin-top: -20px;
+}
+.icon{
+  margin: 50px 0 0 0;
+}
+/*社群小圖案*/
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 40px 30px -10px 30px;
+}
+/*NO超連結底線*/
+.line {
+  text-decoration: none;
+}
+/*可愛長頸鹿*/
+.giraffe{
+  position: absolute;
+  left: 68%;
+  top: 8%;
+}
+.giraffe img{
+  width: 250px;
+  height: 319px;
+}
+/*標題*/
+.t1 {
+  font-size: 40px;
+  letter-spacing: 12px;
+  text-align: center;
+  margin: 15px;
+}
+/*長條圖中文字*/
+.t3 {
+  text-align: center;
+}
+/*分隔線*/
+hr {
+  border: 0;
+  background-color: skyblue;
+  height: 10px;
+}
+/*會動的圓圈圈*/
+.play {
+  display: inline-flex;
+}
+.run {
+  width: 200px;
+  height: 200px;
+  background: #a3a0a0;
+  border-radius: 50%;
+  margin: 30px;
+}
+.mask {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+}
+.inside {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: white;
+  line-height: 170px;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 15px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 900;
+  font-size: 22pt;
+}
+.fill {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0px, 100px, 200px, 0px);
+  background-color: #ff8b94;
+  animation: fill ease-in-out 5s;
+  transform: rotate(170deg);
+}
+.mask.full {
+  animation: fill ease-in-out 5s;
+  transform: rotate(170deg);
+}
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(170deg);
+  }
+}
+.fill1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0px, 100px, 200px, 0px);
+  background-color: #ffc39b;
+  animation: fill1 ease-in-out 5s;
+  transform: rotate(120deg);
+}
+.mask.full1 {
+  animation: fill1 ease-in-out 5s;
+  transform: rotate(120deg);
+}
+@keyframes fill1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+.fill2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0px, 100px, 200px, 0px);
+  background-color: #fce795;
+  animation: fill2 ease-in-out 5s;
+  transform: rotate(150deg);
+}
+.mask.full2 {
+  animation: fill2 ease-in-out 5s;
+  transform: rotate(150deg);
+}
+@keyframes fill2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(150deg);
+  }
+}
+.fill3 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0px, 100px, 200px, 0px);
+  background-color: #9ee7cc;
+  animation: fill3 ease-in-out 5s;
+  transform: rotate(110deg);
+}
+.mask.full3 {
+  animation: fill3 ease-in-out 5s;
+  transform: rotate(110deg);
+}
+@keyframes fill3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(110deg);
+  }
+}
+/*會動的長條圖*/
+.skill {
+  position: relative;
+  width: 90%;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 22pt;
+}
+.progress {
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+  border: 3.5px solid black;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.percent {
+  text-align: right;
+  animation: animate 0.5s linear infinite;
+  background: linear-gradient(45deg, transparent 25%, skyblue 25%, transparent 60%, rgb(236, 236, 236) 60%, transparent 75%, skyblue 75%, transparent);
+  background-size: 30px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 15px;
+  border-radius: 10px;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 0;
+  }
+}
+/*時間軸:老師給的參考資料*/
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: skyblue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  box-sizing: border-box;
+}
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: skyblue;
+  border: 4px solid #104b63;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.right::after {
+  left: -16px;
+}
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .left::after, .right::after {
+    left: 15px;
+  }
+  .right {
+    left: 0%;
+  }
+}
+/*學習經歷對話框*/
+h2 {
+  text-align: center;
+  margin: 0 0 10px 0;
+  color: #0c3d50;
+  font-weight: bold;
+}
+h3{
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-size: larger;
+}
+.word {
+  margin: 10px 0;
+  font-size: 14pt;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+.we {
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+.superman {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: auto;
+}
+.super {
+  overflow: hidden;
+}
+.super img {
+  transition: all 0.6s;
+  width: 100%;
+}
+.super img:hover {
+  transform: scale(1.1);
+}
+/*學習經歷對話框按鈕*/
+.button {
+  font-family: Lucida Console;
+  font-size: large;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  border: #32a4d1;
+  box-shadow: 0px 10px 14px -7px #197195;
+	background:linear-gradient(to bottom, #cae9f6 5%, #76c7e8 100%);
+  background-color:#cae9f6;
+  cursor:pointer;
+  font-weight: bold;
+}
+.button:hover {
+	background:linear-gradient(to bottom,#76c7e8 5%, #cae9f6 100%);
+	background-color:#76c7e8;
+}
+/*工作經歷展開*/
+.accordion {
+  background-color: #cae9f6;
+  color: #444;
+  cursor: pointer;
+  padding: 30px;
+  width: 90%;
+  border: none;
+  text-align: center;
+  outline: black dashed 5px;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.4s;
+  margin: 0 60px;
+  font-family: 標楷體;
+}
+.active, .accordion:hover {
+  background-color: #76c7e8;
+}
+.panel {
+  padding: 0 40px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  margin: 0 60px;
+  width: 85%;
+}
+.egg {
+  float: left;
+}
+.book {
+  float: right;
+  margin: 35px 30px;
+}
+pre {
+  font-size: 16pt;
+  text-align: left;
+  margin: 30px 0 0 -20%;
+  font-family: 標楷體;
+}
