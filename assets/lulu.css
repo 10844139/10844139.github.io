@@ -79,7 +79,7 @@ h5{
   transition: transform 1s ease;
 }
 .logo:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.55);
   border-radius: 30%;
 }
 /*NO超連結底線*/
