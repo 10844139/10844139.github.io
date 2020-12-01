@@ -7,7 +7,7 @@
 }
 /*整體*/
 body {
-  background-image: url("p0043_l.png");
+  background-image: url('../images/p0043_l.png');
   background-repeat: repeat;
   background-attachment: fixed;
   font-family: Lucida Console, 標楷體;
@@ -76,6 +76,11 @@ h5{
   width: 80px;
   height: 80px;
   margin: 40px 30px -10px 30px;
+  transition: transform 1s ease;
+}
+.logo:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 30%;
 }
 /*NO超連結底線*/
 .line {
@@ -312,9 +317,9 @@ hr {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #e5f2f8d8;
+  border: medium solid #d7effad8;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #e5f2f8d8;
+  border-color: transparent transparent transparent #d7effad8;
 }
 .right::before {
   content: " ";
@@ -326,14 +331,14 @@ hr {
   left: 30px;
   border: medium solid #e5f2f8d8;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #e5f2f8d8 transparent transparent;
+  border-color: transparent #d7effad8 transparent transparent;
 }
 .right::after {
   left: -16px;
 }
 .content {
   padding: 20px 30px;
-  background-color:#e5f2f8d8;
+  background-color:#d7effad8;
   position: relative;
   border-radius: 6px;
 }
@@ -348,9 +353,9 @@ hr {
   }
   .container::before {
     left: 60px;
-    border: medium solid#e5f2f8d8;
+    border: medium solid#d7effad8;
     border-width: 10px 10px 10px 0;
-    border-color: transparent#e5f2f8d8 transparent transparent;
+    border-color: transparent#d7effad8 transparent transparent;
   }
   .left::after, .right::after {
     left: 15px;
@@ -363,7 +368,7 @@ hr {
 h2 {
   text-align: center;
   margin: 0 0 10px 0;
-  color: #0c3d50;
+  color: #092c3a;
   font-weight: bold;
 }
 h3{
