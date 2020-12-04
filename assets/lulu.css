@@ -471,14 +471,14 @@ h3{
 }
 .egg {
   float: left;
+  font-size: 16pt;
+  /*text-align: left;*/
+  margin: 50px 0 0 0;
+  font-family: 標楷體;
+  text-justify: inter-ideograph;
+  width: 50%;
 }
 .book {
   float: right;
   margin: 35px 30px;
-}
-pre {
-  font-size: 16pt;
-  text-align: left;
-  margin: 30px 0 0 -20%;
-  font-family: 標楷體;
 }
