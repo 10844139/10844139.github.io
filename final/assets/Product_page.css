@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-user-select: none;
+}
+
+.logo {
+    width: 165px;
+    height: 70px;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.search-bar {
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+    border: 5px solid #ffffff;
+    background-color: #efe9e7;
+    border-radius: 30px;
+    padding: 0 0 0 15px;
+    outline: none;
+    margin-left: -25px;
+}
+
+.search-btn {
+    width: 25px;
+    height: 25px;
+    margin: 8px 15px 0 0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: -25px;
+}
+
+.title {
+    font-size: 14pt;
+    background-color: #162243;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tle>a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-align: right
+}
+
+.footer {
+    font-size: 12pt;
+    background-color: #162243;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*商品頁面(開頭)----------------------------------------------------------------------------------------------*/
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo_album {
+    float: left;
+}
+
+.chair {
+    width: 350px;
+    height: 350px;
+    border: gray double 5px;
+}
+
+/*相簿*/
+#box {
+    width: 0px;
+}
+
+#box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    border: gray groove 1px;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#box img:hover{
+    transform: scale(0.9);
+}
+
+
+.arrow_pic {
+    width: 150px;
+    height: 75px;
+    margin-left: -25px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.arrow_pic:hover {
+    transform: scale(1.2);
+}
+
+/*相簿結束*/
+.text {
+    width: 450px;
+    height: 450px;
+    float: left;
+    margin-top: 90px;
+    margin-left: 50px;
+}
+
+.goods_title {
+    font-size: 16pt;
+}
+
+.goods_text {
+    font-size: 12pt;
+}
+
+.number {
+    font-size: 35pt;
+    float: right;
+    margin-top: 30px;
+    color: red;
+}
+
+.nt {
+    font-size: 20pt;
+    float: right;
+    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.posi_surplus {
+    margin-top: 55px;
+}
+
+.surplus {
+    color: grey;
+    font-size: 10pt;
+
+}
+
+.ver {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.up {
+    padding: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #7bac85e7;
+    border: none;
+    border-radius: 4px;
+    margin-right: 208px;
+    transition: all 0.1s;
+    cursor: pointer;
+
+}
+.up:hover{
+    background-color: #8ccc99e7;
+}
+
+.up_pic {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.cart {
+    padding: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #ffbb00ec;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+.cart:hover{
+    background-color: #fdce4dec;
+}
+
+.cart_pic {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: -5px;
+}
+
+.ho {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 260px;
+}
+
+.qua {
+    border: gray groove 1px;
+    width: 80px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.but {
+    width: 50px;
+    height: 40px;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.line{
+    color: gray;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.three{
+    display: flex;
+    justify-content: center;
+}
+
+.like{
+    display: flex;
+    justify-content: center;
+    font-size: 18pt;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.chair_like{
+    margin-left: 40px;
+}
+
+.size{
+    width: 280px;
+    height: 280px;
+    margin-left: 20px;
+    overflow: hidden;
+    transition: all 0.4s;
+
+}
+.size:hover{
+    transform: scale(1.1);
+}
+
+.size_word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-right: 15px;
+    color: black;
+}
+
+
+.num_pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.num_word{
+    float: left;
+    font-size: 18pt;
+    color: rgb(104, 104, 104);
+}
+.num_nt{
+    float: left;
+    font-size: 14pt;
+    margin-right: 8px;
+    color: black;
+}
+
+.mess{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 30px 200px;
+    border:lightgray outset 3px;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+.good_mes{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.good_name{
+    margin-bottom: 10px;
+}
+
+
+.comment{
+
+    width:350px;
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+    transition: all 0.5s;
+}
+.arrow:hover{
+    transform: scale(1.2);
+}
+
+.arr{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.com_star{
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.com_star_ho{
+    margin-top: 20px;
+    margin-left: 128px;
+}
+
+.pen{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: -2px;
+}
+
+.com_star_user{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.left_user{
+    margin-left: 10px;
+}
+
+.head{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.head_name{
+    display:flex;
+    align-items: center;
+}
+
+.name{
+    font-size: 18pt; 
+    margin-left: 20px;
+}
+
+.comm{
+    margin-left: 100px;
+}
+
+.no_comments{
+    width: 70%;
+    border-radius:20px;
+    display:block; 
+    margin:auto;
+}
+
+
+.cat_posi{
+    position:sticky;
+    bottom: 5px;
+    right: 10px;
+    float: right;
+}
+
+.cat{
+    width: 119.3px;
+    height: 107.9px;
+}
+
+
+/*商品頁面(結尾)----------------------------------------------------------------------------------------------*/

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-user-select: none;
+}
+
+.logo {
+    width: 165px;
+    height: 70px;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.search-bar {
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+    border: 5px solid #ffffff;
+    background-color: #efe9e7;
+    border-radius: 30px;
+    padding: 0 0 0 15px;
+    outline: none;
+    margin-left: -25px;
+}
+
+.search-btn {
+    width: 25px;
+    height: 25px;
+    margin: 8px 15px 0 0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: -25px;
+}
+
+.title {
+    font-size: 14pt;
+    background-color: #162243;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tle>a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-align: right
+}
+
+.footer {
+    font-size: 12pt;
+    background-color: #162243;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cat_posi{
+    position:sticky;
+    bottom: 5px;
+    right: 10px;
+    float: right;
+}
+
+.cat{
+    width: 119.3px;
+    height: 107.9px;
+}
+
+
+/*-------------------搜尋後商品頁面----------------*/
+
+.three{
+    display: flex;
+    justify-content: center;
+}
+
+.chair_like{
+    margin-left: 40px;
+    background-color:#efe9e7 ;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.size{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    transition: all 0.4s;
+    margin-top: 40px;
+
+}
+.size:hover{
+    transform: scale(1.1);
+}
+
+.size_word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+    margin-top: 40px;
+    color: black;
+}
+
+.num_pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.num_word{
+    float: left;
+    font-size: 18pt;
+    color: rgb(104, 104, 104);
+}
+.num_nt{
+    float: left;
+    font-size: 14pt;
+    margin-right: 8px;
+    color: black;
+}
+
+.baba{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}

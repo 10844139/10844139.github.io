@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods_manage</title>
+    <link rel=stylesheet type="text/css" href="assets/Goods_manage.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="ShowTime()">
+    <div class="title">
+        <div class="tle">
+            <a href="Goods_manage.html">商品管理</a>
+            <a href="Add_goods.html">新增商品</a>
+            <a href="Member_manage.html">會員管理</a>
+            <a href="Order_manage.html">訂單管理</a>
+        </div>
+    </div>
+
+
+    <div align="center">
+        <div>
+            <img src="images/cat1.png" class="cat1">
+        </div>
+        <h4 class="all">商品總覽</h4>
+        <table border="1" style="border: 3px black double; width: 96%;">
+            <tr class="text">
+                <td>編號</td>
+                <td>名稱</td>
+                <td>圖片</td>
+                <td>介紹</td>
+                <td>材質</td>
+                <td>價格</td>
+                <td>庫存</td>
+                <td>上架</td>
+                <td>類別</td>
+                <td>更新/刪除</td>
+            </tr>
+            <tr class="text">
+                <form method="post" action=""><!--更新商品-->
+                    <td>CAT-154</td>
+                    <input type="hidden" name="NO" value="<%= rs.getString(0) %>">
+                    <td><input type="text" name="name" value="貓抓布單人椅" class="midden"></td>
+                    <td>
+                        <div>
+                            <input id="input_file1_1" class="input_file midden" type="file" required>
+                            <img id="img_file1_1" src="images/NOOOOO.png" width="80" height="80">
+                        </div>
+
+                        <div>
+                            <input id="input_file1_2" class="input_file midden" type="file">
+                            <img id="img_file1_2" src="images/NOOOOO.png" width="80" height="80">
+                        </div>
+
+                        <div>
+                            <input id="input_file1_3" class="input_file midden" type="file">
+                            <img id="img_file1_3" src="images/NOOOOO.png" width="80" height="80">
+                        </div>
+
+                        <div>
+                            <input id="input_file1_4" class="input_file midden" type="file">
+                            <img id="img_file1_4" src="images/NOOOOO.png" width="80" height="80">
+                        </div>
+                    </td>
+                    <td><input type="text" name="intro" class="midden"
+                            value="簡約北歐風貓抓布單人無扶手沙發，家裡有養寵物嗎？寵物的爪子時常抓壞您昂貴的沙發嗎？無論貓咪還是浣熊，此沙發布能夠承受牠們猛烈的抓擊，心動不如馬上行動！"></td>
+                    <td><input type="text" name="materia" value="貓抓布材質，可防止被寵物抓傷。" class="midden"></td>
+                    <td><input type="text" name="price" value="4699" class="small"></td>
+                    <td><input type="text" name="stock" value="15" class="small"></td>
+                    <td style="text-align:center;"><input type="checkbox" name="add" value="上架" class="verysmall"></td>
+                    <td>
+                        <select name="type">
+                            <option value="可躺式沙發">
+                                可躺式沙發
+                            </option>
+                            <option value="沙發">
+                                沙發
+                            </option>
+                            <option value="椅子">
+                                椅子
+                            </option>
+                        </select>
+                    </td>
+                    <td>
+
+                        <div class="hoo">
+                            <input type="submit" value="更新" class="btn" />
+                            <input type="hidden" value="id" name="id" />
+
+                </form>
+
+                            <form method="post" action=""><!--刪除商品-->
+                                <input type="submit" value="刪除" class="btn" />
+                                <input type="hidden" value="id" name="id" />
+                            </form>
+                        </div>
+
+                    </td>
+
+
+
+            </tr>
+        </table>
+    </div>
+
+    
+
+    <div>
+        <div class="footer">
+            <p>Copyright © 2021 VLAC</p>
+            <div id="showbox"></div>
+        </div>
+    </div>
+
+    <div class="cat_posi">
+        <div>
+            <form action="logout.jsp">
+                <button type="submit" class="CAKE"><img src="images/sign_out_cat.png" class="cat"></button>
+            </form>
+        </div>
+    </div>
+
+
+    <script language="JavaScript">
+        function ShowTime() {
+            var NowDate = new Date();
+            var h = NowDate.getHours();
+            var m = NowDate.getMinutes();
+            var s = NowDate.getSeconds();
+            document.getElementById('showbox').innerHTML = h + '時' + m + '分' + s + '秒';
+            setTimeout('ShowTime()', 1000);
+        }
+
+        $(function () {
+            $(".input_file").change(function () {
+                var id = $(this).attr("id").substr(10);
+                $("#img_file" + id).attr("src", "images/" + $(this).val().substr(12));
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product_page</title>
+    <link rel=stylesheet type="text/css" href="assets/Product_page.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="ShowTime()">
+    <div class="title">
+        <div>
+            <a href="index.html">
+                <img src="images/newlogo.png" class="logo">
+            </a>
+        </div>
+        <div>
+            <div class="search">
+                <input class="search-bar" type="text" name="search" id="search" placeholder="Search......">
+                <img src="images/search.png" class="search-btn">
+            </div>
+        </div>
+        <div class="tle">
+            <a href="All_product.html">所有商品</a>
+            <a href="Cart.html">購物車</a>
+            <a href="Member_center.html">會員中心</a>
+            <a href="Comments.html">留言板</a>
+            <a href="About_us.html">關於我們</a>
+        </div>
+    </div>
+    <!----------商品頁面(頭)---------->
+    <div class="page">
+        <div class="photo_album">
+            <a href="##" id="left"><img class="arrow_pic" src="images/up.png"></a>
+            <div id="box">
+                <img src="images/chair01_1.jpg" alt="" id="img1">
+                <img src="images/chair01_2.jpg" alt="" id="img2">
+                <img src="images/chair01_3.jpg" alt="" id="img3">
+            </div>
+            <a href="##" id="right"><img class="arrow_pic" src="images/down.png"></a>
+        </div>
+
+        <div class="photo_album">
+            <div id="target">
+                <img class="chair" src="images/chair01_1.jpg" id="imgarea">
+            </div>
+        </div>
+
+        <div class="text">
+            <div>
+                <h3 class="goods_title">貓抓布單人椅 CAT-154</h3><br>
+                <h3 class="goods_text">【商品介紹】</h3>
+                <h3 class="goods_text">簡約北歐風貓抓布單人無扶手沙發，家裡有養寵物嗎？寵物的爪子時常抓壞您昂貴的沙發嗎？無論貓咪還是浣熊，此沙發布能夠承受牠們猛烈的抓擊，心動不如馬上行動！
+                </h3>
+                <h3 class="goods_text">【表面素材】</h3>
+                <h3 class="goods_text">貓抓布材質，可防止被寵物抓傷。</h3>
+            </div>
+
+            <div>
+                <h3 class="number pricef">4699</h3>
+                <h3 class="nt">NT$</h3>
+            </div>
+
+            <div class="posi_surplus">
+                <h3 class="surplus">庫存：</h3>
+            </div>
+
+            <div>
+
+                <div class="ho">
+                    <button onclick="sub()" class="but">-</button>
+                    <label class="qua" id="demo">1</label>
+                    <button onclick="add()" class="but">+</button>
+                </div>
+
+
+            </div>
+
+            <div class="ver">
+                <a href="#comment" style="text-decoration: none;">
+                    <button class="up"><img src="images/comment.png" class="up_pic">商品評論</button>
+                </a>
+                <form action="" method="">
+                    <input type="hidden" name="G8" id="dog">
+                    <button type="submit" class="cart" id="rabbit"><img src="images/cart.png"
+                            class="cart_pic">加入購物車</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr class="line">
+    <div>
+        <h3 class="like"> ⇨ 猜你會喜歡 ⇦</h3>
+        <div class="three">
+            <div class="chair_like">
+                <a href="Product_page.html" style="text-decoration: none;">
+                    <img class="size" src="images/chair02_1.jpg">
+                    <h3 class="size_word">貓抓布單人椅 CAT-181</h3>
+                    <div class="num_pie">
+                        <h3 class="num_nt">NT$</h3>
+                        <h3 class="num_word pricef">4589</h3>
+
+                    </div>
+                </a>
+            </div>
+            <div class="chair_like">
+                <a href="Product_page.html" style="text-decoration: none;">
+                    <img class="size" src="images/chair03_1.jpg">
+                    <h3 class="size_word">日式實木單人椅 WOOD-C2</h3>
+                    <div class="num_pie">
+                        <h3 class="num_nt">NT$</h3>
+                        <h3 class="num_word pricef">2450</h3>
+                </a>
+            </div>
+        </div>
+        <div class="chair_like">
+            <a href="Product_page.html" style="text-decoration: none;">
+                <img class="size" src="images/chair04_1.jpg">
+                <h3 class="size_word">實木扶手單人椅 WOOD-C9</h3>
+                <div class="num_pie">
+                    <h3 class="num_nt">NT$</h3>
+                    <h3 class="num_word pricef">3950</h3>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <hr class="line">
+    <div>
+        <a id="comment">
+            <h3 class="like"> ⇨ 商品評論 ⇦</h3>
+        </a>
+    </div>
+    <div class="mess">
+        <div>
+            <div class="head_name">
+                <input type="hidden" id="hidden_gender1" value="male">
+                <img src="images/female1.png" id="board_gender1" class="head">
+                <h3 class="name">Lulu</h3>
+                <div class="left_user">
+                    <img src="images/gray.png" class="com_star_user">
+                    <img src="images/gray.png" class="com_star_user">
+                    <img src="images/gray.png" class="com_star_user">
+                    <img src="images/gray.png" class="com_star_user">
+                    <img src="images/gray.png" class="com_star_user">
+                </div>
+            </div>
+            <div class="comm">
+                <h3 class="good_name">貓抓布單人椅 CAT-154</h3>
+                <p class="comment">我家浣熊真的抓不壞沙發，超讚，真心大推！！</p>
+            </div>
+        </div>
+        <div>
+            <img src="images/chair01_1.jpg" class="good_mes">
+        </div>
+    </div>
+
+    <div>
+        <img src="images/no_comments.png" class="no_comments">
+    </div>
+
+
+
+
+    <div>
+        <div class="footer">
+            <p>Copyright © 2021 VLAC</p>
+            <p>拜訪人數：</p>
+            <div id="showbox"></div>
+        </div>
+    </div>
+
+    <div class="cat_posi">
+        <div>
+            <a href="mailto:cathycatloveyou0978127638@gmail.com">
+                <img src="images/contact_cat.png" class="cat">
+            </a>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var img1 = document.getElementById('img1');
+        var img2 = document.getElementById('img2');
+        var img3 = document.getElementById('img3');
+        var left = document.getElementById('left');
+        var right = document.getElementById('right');
+
+        var arr = ['images/chair01_1.jpg', 'images/chair01_2.jpg', 'images/chair01_3.jpg', 'images/chair01_4.jpg'];
+        var num = 0;
+        right.onclick = function () {
+            if (num < arr.length - 3) {
+                num += 1;
+                img1.src = arr[num];
+                img2.src = arr[num + 1];
+                img3.src = arr[num + 2];
+            }
+        };
+        left.onclick = function () {
+            if (num > 0) {
+                num--;
+                img1.src = arr[num];
+                img2.src = arr[num + 1];
+                img3.src = arr[num + 2];
+            }
+        }
+        img1.onclick = function () {
+            imgarea.src = arr[num];
+        };
+        img2.onclick = function () {
+            imgarea.src = arr[num + 1];
+        };
+        img3.onclick = function () {
+            imgarea.src = arr[num + 2];
+        };
+    </script>
+    <script>
+        var i = 1;
+
+        priceformat();
+
+        function sub() {
+            if (i > 1) {
+                i--;
+                document.getElementById("demo").innerHTML = i;
+            } else {
+                i = 1;
+            }
+        }
+
+        function add() {
+            i++;
+            document.getElementById("demo").innerHTML = i;
+        }
+
+        function priceformat() {
+            var p = document.getElementsByClassName("pricef");
+            for (var i = 0; i < p.length; i++) {
+                p[i].innerText = pricef(p[i].innerText);
+            }
+            document.getElementsByClassName("price").innerText = pricef(p);
+        }
+
+        function pricef(price) {
+            var p = price.toString();
+            if (p.length < 3) {
+                return p;
+            } else {
+                return pricef(p.substr(0, p.length - 3)) + "," + p.substr(p.length - 3);
+            }
+        }
+    </script>
+
+    <script>
+        $(function () {
+            function maleRandom(y) {
+                return Math.floor(Math.random() * 10) + 1;
+            };
+            for (var i = 1; i <= 5; i++) {
+                $("#board_gender" + i).attr("src", "images/" + $("#hidden_gender" + i).val() + maleRandom() +
+                    ".png");
+            }
+
+            $("#rabbit").click(function () {
+                $("#dog").val($("#demo").text());
+            })
+
+
+        });
+    </script>
+
+    <!----------商品頁面(尾)---------->
+
+</body>
+
+</html>
+<script language="JavaScript">
+    function ShowTime() {
+        var NowDate = new Date();
+        var h = NowDate.getHours();
+        var m = NowDate.getMinutes();
+        var s = NowDate.getSeconds();
+        document.getElementById('showbox').innerHTML = h + '時' + m + '分' + s + '秒';
+        setTimeout('ShowTime()', 1000);
+    }
+</script>

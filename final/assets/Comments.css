@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-user-select: none;
+}
+
+.logo {
+    width: 165px;
+    height: 70px;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.search-bar {
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+    border: 5px solid #ffffff;
+    background-color: #efe9e7;
+    border-radius: 30px;
+    padding: 0 0 0 15px;
+    outline: none;
+    margin-left: -25px;
+}
+
+.search-btn {
+    width: 25px;
+    height: 25px;
+    margin: 8px 15px 0 0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: -25px;
+}
+
+.title {
+    font-size: 14pt;
+    background-color: #162243;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tle>a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-align: right
+}
+
+.footer {
+    font-size: 12pt;
+    background-color: #162243;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*留言板*/
+
+.form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form > input{
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.my{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 20px;
+    padding: 20px 0px;
+}
+
+.good{
+    width: 250px;
+    height: 250px;
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.send{
+    font-size: 12pt;
+    padding: 5px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.res{
+    font-size: 12pt;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.head{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.head_name{
+    display:flex;
+    align-items: center;
+}
+
+.name{
+    font-size: 18pt; 
+    margin-left: 20px;
+}
+
+.comm{
+    margin-left: 100px;
+}
+
+.mess{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 30px 200px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.good_mes{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.good_name{
+    margin-bottom: 10px;
+}
+
+
+.comment{
+
+    width:350px;
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+    transition: all 0.5s;
+}
+.arrow:hover{
+    transform: scale(1.2);
+}
+
+.arr{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.com_star{
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.com_star_ho{
+    margin-top: 20px;
+    margin-left: 128px;
+}
+
+.pen{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: -2px;
+}
+
+.com_star_user{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.left_user{
+    margin-left: 10px;
+}
+
+.cat_posi{
+    position:sticky;
+    bottom: 5px;
+    right: 10px;
+    float: right;
+}
+
+.cat{
+    width: 119.3px;
+    height: 107.9px;
+}

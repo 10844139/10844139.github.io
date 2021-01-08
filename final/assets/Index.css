@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.logo {
+    width: 165px;
+    height: 70px;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.search-bar {
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+    border: 5px solid #ffffff;
+    background-color: #efe9e7;
+    border-radius: 30px;
+    padding: 0 0 0 15px;
+    outline: none;
+    margin-left: -25px;
+}
+
+.search-btn {
+    width: 25px;
+    height: 25px;
+    margin: 8px 15px 0 0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: -25px;
+}
+
+.title {
+    font-size: 14pt;
+    background-color: #162243;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tle>a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-align: right
+}
+
+.footer {
+    font-size: 12pt;
+    background-color: #162243;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*AD*/
+.wid{
+    width: 100%;
+    margin-top: -30px;
+}
+
+.ali{
+    text-align:center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #5e5e5e;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*熱門*/
+
+.hi{
+    margin-top: 50px;
+}
+
+.line{
+    color: gray;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.hot{
+    margin-top: 50px;
+}
+
+.three{
+    display: flex;
+    justify-content: center;
+}
+
+.like{
+    display: flex;
+    justify-content: center;
+    font-size: 22pt;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.chair_like_cen{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18pt;
+}
+
+.top{
+    width: 50px;
+    height: 50px;
+    margin-top: -15px;
+}
+
+.top_top{
+    display: flex;
+    justify-content: center;
+}
+
+
+.size{
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.size:hover{
+    transform: scale(1.1);
+}
+
+.size_word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+.num_pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num_word{
+    float: left;
+    font-size: 18pt;
+    color: rgb(104, 104, 104);
+}
+.num_nt{
+    float: left;
+    font-size: 14pt;
+    margin-right: 10px;
+    color: black;
+}
+
+.good{
+    display: flex;
+    justify-content: center;
+}
+
+.good_pic{
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+.good_star{
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+.cat_posi{
+    position:sticky;
+    bottom: 5px;
+    right: 10px;
+    float: right;
+}
+
+.cat{
+    width: 119.3px;
+    height: 107.9px;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel=stylesheet type="text/css" href="assets/Comments.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="ShowTime()">
+    <div class="title">
+        <div>
+            <a href="index.html"><img src="images/newlogo.png" class="logo"></a>
+        </div>
+        <div>
+            <div class="search">
+                <input class="search-bar" type="text" name="search" id="search" placeholder="Search......">
+                <img src="images/search.png" class="search-btn">
+            </div>
+        </div>
+        <div class="tle">
+            <a href="All_product.html">所有商品</a>
+            <a href="Cart.html">購物車</a>
+            <a href="Member_center.html">會員中心</a>
+            <a href="Comments.html">留言板</a>
+            <a href="About_us.html">關於我們</a>
+        </div>
+    </div>
+
+    <!--留言板-->
+    <!--背景顏色-->
+    <div style="background-color: lightgrey; padding: 30px 0; margin: -30px 0;">
+        <div class="my">
+            <form action="" method="">
+                <div>
+                    <div class="form">
+                        <h3>姓名：</h3>
+                        <input type="text" name="user_name" style="width: 150px; height: 22px;" required/>
+                    </div>
+                    <div class="form">
+                        <h3>產品：</h3>
+                        <input type="text" name="user_product" style="width: 350px; height: 22px;" required/>
+                    </div>
+
+                    <div class="form">
+                        <h3>郵件：</h3>
+                        <input type="text" name="user_mail" style="width: 350px; height: 22px;" required/>
+                    </div>
+                    <div class="form">
+                        <h3>主題：</h3>
+                        <input type="text" name="user_theme" style="width: 350px; height: 22px;" required/>
+                    </div>
+                    <div class="form">
+                        <h3>內容：</h3>
+                        <input type="text" name="user_content" style="width: 350px; height: 120px;" required/>
+                    </div>
+                    <div class="but">
+                        <button name="submit" type="submit" class="send"><img src="images/messenger.png"
+                                class="pen">點此送出</button>
+                        <button name="reset" type="reset" class="res"><img src="images/pen.png"
+                                class="pen">重新填寫</button>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <div class="arr">
+                    <a href="##" id="left"><img class="arrow" src="images/left-arrow.png"></a>
+                    <div id="box">
+                        <img src="images/shoping.png" class="good" alt="" id="img1">
+                    </div>
+                    <a href="##" id="right"><img class="arrow" src="images/right-arrow.png"></a>
+                </div>
+                <div class="com_star_ho">
+                    <img src="images/gray.png" class="com_star goods_sofa star_click" id="good1">
+                    <img src="images/gray.png" class="com_star goods_sofa star_click" id="good2">
+                    <img src="images/gray.png" class="com_star goods_sofa star_click" id="good3">
+                    <img src="images/gray.png" class="com_star goods_sofa star_click" id="good4">
+                    <img src="images/gray.png" class="com_star goods_sofa star_click" id="good5">
+                </div>
+            </div>
+        </div>
+
+        <div class="mess">
+            <div>
+                <div class="head_name">
+                    <input type="hidden" id="hidden_gender1" value="male">
+                    <img src="images/female1.png" id="board_gender1" class="head">
+                    <h3 class="name">Lulu</h3>
+                    <div class="left_user">
+                        <img src="images/gray.png" class="com_star_user">
+                        <img src="images/gray.png" class="com_star_user">
+                        <img src="images/gray.png" class="com_star_user">
+                        <img src="images/gray.png" class="com_star_user">
+                        <img src="images/gray.png" class="com_star_user">
+                    </div>
+                </div>
+                <div class="comm">
+                    <h3 class="good_name">貓抓布單人椅 CAT-154</h3>
+                    <p class="comment">我家浣熊真的抓不壞沙發，超讚，真心大推！！</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/chair01_1.jpg" class="good_mes">
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="footer">
+                <p>Copyright © 2021 VLAC</p>
+                <p>拜訪人數：</p>
+                <div id="showbox"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cat_posi">
+        <div>
+            <a href="mailto:cathycatloveyou0978127638@gmail.com">
+                <img src="images/contact_cat.png" class="cat">
+            </a>
+        </div>
+    </div>
+
+</body>
+<script language="JavaScript">
+    function ShowTime() {
+        var NowDate = new Date();
+        var h = NowDate.getHours();
+        var m = NowDate.getMinutes();
+        var s = NowDate.getSeconds();
+        document.getElementById('showbox').innerHTML = h + '時' + m + '分' + s + '秒';
+        setTimeout('ShowTime()', 1000);
+    }
+</script>
+
+<script>
+    var img1 = document.getElementById('img1');
+    var left = document.getElementById('left');
+    var right = document.getElementById('right');
+
+    var arr = ['images/shoping.png', 'images/chair01_1.jpg', 'images/chair01_2.jpg'];
+    var num = 0;
+    right.onclick = function () {
+        if (num < arr.length - 1) {
+            num += 1;
+            img1.src = arr[num];
+        }
+    };
+    left.onclick = function () {
+        if (num > 0) {
+            num--;
+            img1.src = arr[num];
+        }
+    }
+    img1.onclick = function () {
+        imgarea.src = arr[num];
+    };
+</script>
+
+<script>
+    $(function () {
+        function maleRandom(y) {
+            return Math.floor(Math.random() * 10) + 1;
+        };
+        for (var i = 1; i <= 5; i++) {
+            $("#board_gender" + i).attr("src", "images/" + $("#hidden_gender" + i).val() + maleRandom() +
+                ".png");
+        }
+
+    })
+</script>
+
+<script>
+    $(function () {
+        $(".goods_sofa").hover(function () {
+            var id = $(this).attr("id").substr(4);
+            for (var i = 1; i <= 5; i++) {
+                $("#good" + i).attr("src", "images/gray.png");
+                $("#good" + i).width("30px");
+                $("#good" + i).height("30px");
+            }
+
+            for (var i = 1; i <= id; i++) {
+                $("#good" + i).attr("src", "images/yellow.png");
+                $("#good" + i).width("30px");
+                $("#good" + i).height("30px");
+            }
+
+        }, function () {
+            for (var i = 1; i <= 5; i++) {
+                $("#good" + i).attr("src", "images/gray.png");
+                $("#good" + i).width("30px");
+                $("#good" + i).height("30px");
+            }
+            for (var i = 1; i <= 5; i++) {
+                if ($("#good" + i).hasClass("cat")) {
+                    for (var j = 1; j <= i; j++) {
+                        $("#good" + j).attr("src", "images/yellow.png");
+                        $("#good" + j).width("30px");
+                        $("#good" + j).height("30px");
+                    }
+                    for (var k = i + 1; k <= 5; k++) {
+                        $("#good" + k).attr("src", "images/gray.png");
+                        $("#good" + k).width("30px");
+                        $("#good" + k).height("30px");
+                    }
+                    break;
+                }
+            }
+
+        });
+
+        $(".star_click").click(function () {
+            var id = $(this).attr("id").substr(4);
+
+            for (var i = 1; i <= 5; i++) {
+                $("#good" + i).removeClass("cat");
+            }
+
+            $("#good" + id).addClass("cat");
+            for (var i = 1; i <= id; i++) {
+                $("#good" + i).attr("src", "images/yellow.png");
+                $("#good" + i).width("30px");
+                $("#good" + i).height("30px");
+            }
+
+        });
+
+
+    })
+</script>
+
+</html>

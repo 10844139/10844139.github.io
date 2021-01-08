@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_goods</title>
+    <link rel=stylesheet type="text/css" href="assets/Add_goods.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="ShowTime()">
+    <div class="title">
+        <div class="tle">
+            <a href="Goods_manage.html">商品管理</a>
+            <a href="Add_goods.html">新增商品</a>
+            <a href="Member_manage.html">會員管理</a>
+            <a href="Order_manage.html">訂單管理</a>
+        </div>
+    </div>
+
+    <div>
+        <div align="center">
+            <img src="images/cat2.png" class="cat1">
+        </div>
+
+        <div class="haaaa">
+
+            <h4 class="all">新增商品</h4>
+
+            <div class="div_input">
+                <h3 class="yaaaa">編號：</h3>
+                <input type="text" required>
+            </div>
+
+            <div class="div_input">
+                <h3 class="yaaaa">名稱：</h3>
+                <input type="text" required>
+            </div>
+
+            <div class="div_input">
+
+                <div align="center">
+                    <table class="peach">
+                        <tr>
+                            <td rowspan="5"><h3 class="yaaaa">圖片：</h3></td>
+                            <td><input id="input_file1_1" class="input_file" type="file" required></td>
+                            <td><img id="img_file1_1" src="images/NOOOOO.png" width="80" height="80"></td>
+                        </tr>
+                        <tr>
+                            <td><input id="input_file1_2" class="input_file" type="file"></td>
+                            <td><img id="img_file1_2" src="images/NOOOOO.png" width="80" height="80"></td>
+                        </tr>
+                        <tr>
+                            <td><input id="input_file1_3" class="input_file" type="file"></td>
+                            <td><img id="img_file1_3" src="images/NOOOOO.png" width="80" height="80"></td>                        
+                        </tr>
+                        <tr>
+                            <td><input id="input_file1_4" class="input_file" type="file"></td>
+                            <td><img id="img_file1_4" src="images/NOOOOO.png" width="80" height="80"></td>                        
+                        </tr>
+                    </table>                    
+                </div>
+
+
+                <div class="div_input">
+                    <h3 class="yaaaa">介紹：</h3>
+                    <input type="text" required>
+                </div>
+
+                <div class="div_input">
+                    <h3 class="yaaaa">材質：</h3>
+                    <input type="text" required>
+                </div>
+
+                <div class="div_input">
+                    <h3 class="yaaaa">價格：</h3>
+                    <input type="text" required>
+                </div>
+
+                <div class="div_input">
+                    <h3 class="yaaaa">庫存：</h3>
+                    <input type="text" required>
+                </div>
+
+                <div class="div_input">
+                    <h3 class="yaaaa">類別：</h3>
+                    <select name="type" style="width: 167px; height: 21px;">
+                        <option value="可躺式沙發">
+                            可躺式沙發
+                        </option>
+                        <option value="沙發">
+                            沙發
+                        </option>
+                        <option value="椅子">
+                            椅子
+                        </option>
+                    </select>
+                </div>
+
+                <div class="div_input">
+                    <input type="button" value="新增" class="btn">
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <div>
+            <div class="footer">
+                <p>Copyright © 2021 VLAC</p>
+                <div id="showbox"></div>
+            </div>
+        </div>
+
+        <div class="cat_posi">
+            <div>
+                <form action="logout.jsp">
+                    <button type="submit" class="CAKE"><img src="images/sign_out_cat.png" class="cat"></button>
+                </form>
+            </div>
+        </div>
+
+        <script language="JavaScript">
+            function ShowTime() {
+                var NowDate = new Date();
+                var h = NowDate.getHours();
+                var m = NowDate.getMinutes();
+                var s = NowDate.getSeconds();
+                document.getElementById('showbox').innerHTML = h + '時' + m + '分' + s + '秒';
+                setTimeout('ShowTime()', 1000);
+            }
+
+            $(function () {
+                $(".input_file").change(function () {
+                    var id = $(this).attr("id").substr(10);
+                    $("#img_file" + id).attr("src", "images/" + $(this).val().substr(12));
+                })
+            })
+        </script>
+</body>
+
+</html>

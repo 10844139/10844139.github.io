@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-user-select: none;
+}
+
+.logo {
+    width: 165px;
+    height: 70px;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.search-bar {
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+    border: 5px solid #ffffff;
+    background-color: #efe9e7;
+    border-radius: 30px;
+    padding: 0 0 0 15px;
+    outline: none;
+    margin-left: -25px;
+}
+
+.search-btn {
+    width: 25px;
+    height: 25px;
+    margin: 8px 15px 0 0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: -25px;
+}
+
+.title {
+    font-size: 14pt;
+    background-color: #162243;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tle>a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-align: right
+}
+
+.footer {
+    font-size: 12pt;
+    background-color: #162243;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*---------------------------登入表單------------------*/
+
+.sign-in {
+    text-align: center;
+    margin: 20px;
+    width: 30%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.form>input {
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+.keep {
+    margin: 0 10px;
+}
+
+.btn {
+    background-color: #3c5fa0;
+    border: dotted 2px;
+    border-color: #96bee4;
+    color: white;
+    padding: 8px 50px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    border-radius: 25px;
+    transition: all 0.5s linear;
+}
+
+.at {
+    display: flex;
+}
+
+.images1 {
+    width: 150px;
+    height: 150px;
+    margin: -30px auto -33px 150px;
+}
+
+.images2 {
+    width: 150px;
+    height: 150px;
+    margin: -30px 150px -30px auto;
+}
+
+/*---------------------------註冊表單------------------*/
+
+.form2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 0 10px 25%;
+}
+
+.form2>input {
+    font-size: 16px;
+    width: 50%;
+    padding-left: 3px;
+    margin: 8px 0;
+}
+
+.data {
+    margin: 0 30px 10% 30px;
+    border-radius: 5%;
+}
+
+.join {
+    background-color: #ffe284;
+    border-radius: 20px;
+    font-size: 10pt;
+    padding: 10px 20px;
+    margin: 0 5% 10px 5%;
+    border: none;
+    cursor: pointer;
+    width: 22%;
+    outline: none;
+}
+
+.txt {
+    font-style: italic;
+    text-decoration: underline;
+    color: #230a74;
+}
+
+.box {
+    padding: 15px;
+}
+
+.box>input {
+    padding-left: 10px;
+}
+
+.enter {
+    border-radius: 5px;
+    background-color: #ffcec7;
+    padding: 5px 40px;
+    margin: 0 50px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: double 4px;
+    border-color: black;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
+}
+
+.modal-content {
+    text-align: center;
+    background: linear-gradient(141deg, #edeef0 0%, #ede1e3 41%, #d1dfe8 81%);
+    margin: 20px;
+    border: none;
+    width: 60%;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@media screen and (max-height: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.cat_posi{
+    position:sticky;
+    bottom: 5px;
+    right: 10px;
+    float: right;
+}
+
+.cat{
+    width: 119.3px;
+    height: 107.9px;
+}

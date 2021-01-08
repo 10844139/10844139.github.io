@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member_center</title>
+    <link rel=stylesheet type="text/css" href="assets/Server_signin.css">
+</head>
+
+<body onload="ShowTime()">
+    <div class="title">
+        <div>
+            <a href="index.html">
+                <img src="images/newlogo.png" class="logo">
+            </a>
+        </div>
+        <div>
+            <div class="search">
+                <input class="search-bar" type="text" name="search" id="search" placeholder="Search......">
+                <img src="images/search.png" class="search-btn">
+            </div>
+        </div>
+        <div class="tle">
+            <a href="All_product.html">所有商品</a>
+            <a href="Cart.html">購物車</a>
+            <a href="Member_center.html">會員中心</a>
+            <a href="Comments.html">留言板</a>
+            <a href="About_us.html">關於我們</a>
+        </div>
+    </div>
+
+    <center>
+        <img src="images/server_cat1.png" class="cat1">
+        <form method="post" action="" class="sign-in">
+            <!--action 送到的位址-->
+            <fieldset>
+                <legend>
+                    <h2>管理者登入</h2>
+                </legend>
+                <div class="form">
+                    <h3>帳號：</h3>
+                    <input type="text" required />
+                </div>
+                <div class="form">
+                    <h3>密碼：</h3>
+                    <input type="password" required />
+                </div>
+                <div class="form">
+                    <label class="form">
+                        <input type="checkbox" />
+                        <h4 class="keep">記住密碼</h4>
+                    </label>
+                </div>
+                <input type="submit" value="登入" class="btn" />
+            </fieldset>
+        </form>
+
+        <button class="join">
+            <a href="Member_center.html">
+            <h3 class="txt">我不是管理員 (´;ω;`) 點我回去 !</h3>
+            </a>
+        </button>
+    </center>
+
+
+    <div >
+        <img src="images/server_big.png" class="big">
+    </div>
+
+    
+    <div>
+        <div class="footer">
+            <p>Copyright © 2021 VLAC</p>
+            <p>拜訪人數：</p>
+            <div id="showbox"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script language="JavaScript">
+    function ShowTime() {
+        var NowDate = new Date();
+        var h = NowDate.getHours();
+        var m = NowDate.getMinutes();
+        var s = NowDate.getSeconds();
+        document.getElementById('showbox').innerHTML = h + '時' + m + '分' + s + '秒';
+        setTimeout('ShowTime()', 1000);
+    }
+</script>
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
