@@ -73,9 +73,16 @@
 
 /*---------------------------登入表單------------------*/
 
+.home{
+    width: 70px;
+    height: 70px;
+    margin-bottom: -103px;
+    margin-left: 21%;
+}
+
 .sign-in {
     text-align: center;
-    margin: 20px;
+    margin: 80px 20px 20px 20px;
     width: 30%;
 }
 
@@ -118,7 +125,7 @@
 
 .at {
     display: flex;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .images1 {
@@ -126,6 +133,7 @@
     height: 250px;
     margin: 50px auto -35px auto;
 }
+
 
 /*---------------------------註冊表單------------------*/
 
@@ -153,7 +161,7 @@
     border-radius: 20px;
     font-size: 10pt;
     padding: 10px 20px;
-    margin: 0 5% 10px 5%;
+    margin: 1% 5% 10px 5%;
     border: none;
     cursor: pointer;
     width: 22%;
